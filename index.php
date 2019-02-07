@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types = 1);
 
-function setIsValid(bool $valid){
+class User{}
 
+function getUser() : User {
+	return new User;
 }
 
-setIsValid(true);
+var_dump(getUser());
