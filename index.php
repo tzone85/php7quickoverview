@@ -1,10 +1,16 @@
 <?php
 
-
 class User{}
 
-function getUser() : User {
-	return new User;
+interface SomeInterface{
+	public function getUser() : User;
 }
 
-var_dump(getUser());
+class SomeClass implements SomeInterface{
+	public function getUser() : User
+	{
+		return new User;
+	}
+}
+
+(new SomeClass())->getUser();
