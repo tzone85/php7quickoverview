@@ -1,16 +1,12 @@
 <?php
+// spaceship operator
 
-class User{}
+$games = ['Mass Effect', 'Super Mario Bros', 'Zeda', 'Follout', 'Metal Gear'];
 
-interface SomeInterface{
-	public function getUser() : User;
-}
+//rsort($games);
 
-class SomeClass implements SomeInterface{
-	public function getUser() : User
-	{
-		return new User;
-	}
-}
-
-(new SomeClass())->getUser();
+usort($games, function ($a, $b){
+	var_dump('a: ' . $a . ' b: ' . $b);
+	return strlen($a) <=> strlen($b); // return -1, 0, 1
+});
+var_dump($games);
