@@ -16,6 +16,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+ nullCoalesceOperator
             <state relative-caret-position="150">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
@@ -57,7 +58,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="20" />
     <option name="y" value="43" />
     <option name="width" value="1400" />
@@ -111,16 +112,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549558149203</updated>
-      <workItem from="1549558150570" duration="1327000" />
+      <workItem from="1549558150570" duration="7232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+nullCoalesceOperator
     <option name="totallyTimeSpent" value="2055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="0" />
     <editor active="true" />
+
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24248926" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -131,7 +134,9 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+nullCoalesceOperator
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.22253129" />
+
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -162,6 +167,7 @@
         </state>
       </provider>
     </entry>
+ nullCoalesceOperator
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">

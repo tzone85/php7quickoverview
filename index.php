@@ -1,4 +1,5 @@
 <?php
+nullCoalesceOperator
 # Null Coalesce Operator old way of checking if something is set first
 
 $_GET['name'] = 'Joe';
