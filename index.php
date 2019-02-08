@@ -1,16 +1,12 @@
 <?php
 
-class User{}
+require 'vendor/autoload.php';
 
-interface SomeInterface{
-	public function getUser() : User;
-}
 
-class SomeClass implements SomeInterface{
-	public function getUser() : User
-	{
-		return new User;
-	}
-}
+use App\{Person, Animals};
 
-(new SomeClass())->getUser();
+# old way
+# use App\Animals
+
+var_dump(new Person);
+var_dump(new Animals);
