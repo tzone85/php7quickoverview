@@ -1,16 +1,14 @@
 <?php
+# Null Coalesce Operator old way of checking if something is set first
 
-class User{}
+$_GET['name'] = 'Joe';
 
-interface SomeInterface{
-	public function getUser() : User;
-}
+$name = isset($_GET['name']) ? $_GET['name'] : 'nothing';
 
-class SomeClass implements SomeInterface{
-	public function getUser() : User
-	{
-		return new User;
-	}
-}
+var_dump($name);
 
-(new SomeClass())->getUser();
+# More elegant and PHP7 way of doing things
+
+$secondName = $_GET['secondName'] ?? 'nothing';
+
+var_dump($secondName);
