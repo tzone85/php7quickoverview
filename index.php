@@ -12,7 +12,7 @@ usort($games, function ($a, $b){
 var_dump($games);
 */
 
-class User {
+/*class User {
 	protected $name;
 	protected $age;
 
@@ -71,3 +71,42 @@ $collection = new UserCollection([
 $collection->sortBy('getName');
 
 var_dump($collection->users());
+*/
+interface Logger {
+	public function log($message);
+}
+
+/*
+ * say for some reason we don't need this class
+class TerminalLogger implements Logger {
+
+	public function log($message){
+		var_dump($message);
+	}
+}
+*/
+
+class Application {
+	protected $logger;
+
+	public function setLogger(Logger $logger){
+		$this->logger = $logger;
+
+		return $this;
+	}
+
+	public function action()
+	{
+		$this->logger->log('Doing things');
+	}
+
+}
+
+$app = new Application();
+$app->setLogger(new class implements Logger {
+	public function log($message)
+	{
+		var_dump($message);
+	}
+});
+$app->action();
